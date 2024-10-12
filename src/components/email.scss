@@ -1,0 +1,76 @@
+@import "../utility/utils.scss";
+.email-form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+  .top-form {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    div {
+      display: flex;
+      flex-direction: column;
+      input {
+        height: 2rem;
+        width: 100%;
+        border-bottom: 2px solid $electric-violet;
+        background: linear-gradient(to bottom, rgba($bg-dark, 0), rgba($bg-dark, 0.7));
+      }
+    }
+
+    margin-bottom: 1rem;
+  }
+
+  div {
+    width: 100%;
+    label {
+      padding-left: 1rem;
+      font-weight: bold;
+      text-shadow: 0 0 2px $electric-violet;
+    }
+    input,
+    textarea {
+      color: $text-dark;
+      padding: 1rem;
+      border-radius: 1rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+  .bottom-form {
+    textarea {
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      font-weight: normal;
+      width: 100%;
+      height: 8rem;
+      border-radius: 0.5rem;
+      resize: none;
+
+      margin-top: 1rem;
+      border: 1px solid $electric-violet;
+      background-color: rgba($bg-dark, 0.7);
+
+      box-shadow: $shadow;
+    }
+  }
+
+  input[type="submit"] {
+    background-color: $primary;
+    border: 1px solid $electric-violet;
+    box-shadow: $shadow;
+    color: $text-light;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in-out;
+
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 0 15px $electric-violet;
+      background-color: $bg-dark;
+    }
+  }
+}

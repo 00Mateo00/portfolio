@@ -4,6 +4,7 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Social from "./components/Social";
 import Aboutme from "./components/Aboutme";
+import Email from "./components/Email";
 
 function App() {
   return (
@@ -15,8 +16,11 @@ function App() {
         </aside>
         <main className="portfolio__main">
           <Header />
-          <Projects />
-          <Aboutme />
+          <div className="content">
+            <Projects />
+            <Aboutme />
+            <Email />
+          </div>
         </main>
       </div>
       <footer>

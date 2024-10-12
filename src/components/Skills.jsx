@@ -23,7 +23,7 @@ const Skills = () => {
           { language: "English", level: "Fluent" },
           { language: "Japanese", level: "On progress" },
         ].map((skill) => (
-          <div>
+          <div key={skill.language}>
             {skill.language}: {skill.level}
           </div>
         ))}
