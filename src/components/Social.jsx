@@ -1,5 +1,5 @@
 import React from "react";
-/* import "./social.scss"; */
+import "./social.scss";
 import { Mail, Smartphone } from "lucide-react";
 import { MapPin } from "lucide-react";
 
