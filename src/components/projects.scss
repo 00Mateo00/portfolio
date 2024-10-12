@@ -1,0 +1,43 @@
+@import "../utility/utils.scss";
+
+.projects {
+  padding-bottom: 3rem;
+  .projects-grid {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+
+    .project-card {
+      background-color: $bg-light;
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      transition: box-shadow 0.3s ease;
+      border: 1px solid $electric-violet;
+      box-shadow: $shadow;
+
+      &:hover {
+        box-shadow: 0 0 15px $electric-violet;
+        background-color: $bg-dark;
+      }
+
+      h3 {
+        color: $text-light;
+        font-size: 1.2rem;
+      }
+
+      p {
+      }
+
+      a {
+        color: $electric-violet;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: $electric-violet-light;
+        }
+      }
+    }
+  }
+}

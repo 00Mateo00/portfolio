@@ -1,0 +1,23 @@
+@import "../utility/utils.scss";
+.social {
+  margin-top: 3rem;
+  div {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    a {
+      color: $text-light;
+      transition: color 0.3s ease;
+      display: flex;
+      p {
+        margin: auto 0;
+        padding-left: 1rem;
+      }
+
+      &:hover {
+        color: $electric-violet;
+      }
+    }
+  }
+}

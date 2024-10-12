@@ -1,0 +1,47 @@
+@import "../utility/utils.scss";
+@keyframes neon-pulse {
+  from {
+    text-shadow: none;
+  }
+  to {
+    text-shadow: 0 0 2px $electric-violet, 0 0 1px $electric-violet, 0 0 15px $electric-violet;
+  }
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 6rem;
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: $electric-violet;
+    text-shadow: 0 0 5px $electric-violet, 0 0 10px $electric-violet;
+    animation: neon-pulse 1.5s infinite alternate;
+  }
+
+  p {
+    color: $text-dark;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style-type: none;
+    padding: 0;
+    a {
+      color: $text-light;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $electric-violet;
+      }
+    }
+  }
+}

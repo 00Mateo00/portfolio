@@ -1,0 +1,37 @@
+@import "../utility/utils.scss";
+.skills {
+  h2 {
+    color: $text-light;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    width: min-content;
+  }
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    width: 100%;
+    padding-bottom: 3rem;
+
+    span {
+      background-color: $bg-light;
+      border: 1px solid $electric-violet;
+      border-radius: 1rem;
+      color: $text-light;
+      font-size: 0.875rem;
+      padding: 0.25rem 0.75rem;
+      cursor: default;
+
+      &:hover {
+        text-shadow: 0 0 1px $electric-violet, 0 0 1px $electric-violet, 0 0 1px $electric-violet;
+        box-shadow: 0 0 5px $electric-violet, 0 0 10px $electric-violet, 0 0 15px $electric-violet;
+      }
+    }
+  }
+
+  .language {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

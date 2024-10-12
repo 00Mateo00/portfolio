@@ -1,0 +1,44 @@
+// Portfolio Color Scheme Variables
+
+$bg-dark: rgb(15, 15, 15);
+$bg-light: rgb(25, 25, 25);
+$text-light: #ffffff;
+$text-dark: #cccccc;
+$electric-violet: #9900ff;
+$electric-violet-light: #b14aff;
+
+$shadow: 0 0 20px rgba(153, 0, 255, 0.3);
+
+// Main colors
+$primary: #8a2aed;
+$secondary: #2a2a2a;
+$background: #121212;
+
+// Text colors
+$text-primary: #ffffff;
+$text-secondary: #b3b3b3;
+
+// Accent colors
+$accent-1: #f0e6ff;
+$accent-2: #4a0ba8;
+
+// Utility colors
+$border: #333333;
+
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+// Semantic color variables
+$color-button: $primary;
+$color-button-hover: $accent-1;
+$color-link: $primary;
+$color-link-hover: $accent-1;
+$color-header-bg: $secondary;
+$color-body-bg: $background;
+$color-card-bg: $secondary;
+$color-border: $border;
