@@ -12,5 +12,8 @@
   }
 }
 
-@media screen and (max-width: px) {
+@media screen and (max-width: 830px) {
+  .about {
+    overflow-y: none;
+  }
 }
