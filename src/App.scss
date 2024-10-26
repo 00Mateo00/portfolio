@@ -83,7 +83,7 @@ body {
 }
 
 .portfolio {
-  padding: 2rem 4rem 0;
+  padding: 1rem 4rem 0;
   width: 90rem;
   height: 100%;
   display: flex;
@@ -122,5 +122,22 @@ footer {
 
   &__text {
     color: $text-dark;
+  }
+}
+
+// media queries
+@media screen and (max-width: 1322px) {
+  .portfolio {
+    width: 70rem;
+    aside {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .portfolio {
+    width: 100%;
+    padding: 0;
   }
 }
