@@ -21,11 +21,11 @@ function App() {
             <Aboutme />
             <Email />
           </div>
+          <footer>
+            <p>© 2024 Mateo Ossa. All rights reserved.</p>
+          </footer>
         </main>
       </div>
-      <footer>
-        <p>© 2024 Mateo Ossa. All rights reserved.</p>
-      </footer>
     </div>
   );
 }
